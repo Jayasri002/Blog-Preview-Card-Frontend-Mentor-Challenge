@@ -30,4 +30,4 @@ This project is a solution to the Blog Preview Card challenge on Frontend Mentor
 ## ✍️ Author
 
 * **Frontend Mentor:** [@Your-Frontend-Mentor-Profile](https://www.frontendmentor.io/)
-* **GitHub:** [Jayasri V](https://github.com/Jayasri002)
+* **GitHub:** [@Jayasri V](https://github.com/Jayasri002)
