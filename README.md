@@ -29,5 +29,5 @@ This project is a solution to the Blog Preview Card challenge on Frontend Mentor
 
 ## ✍️ Author
 
-* **Frontend Mentor:** [@Your-Frontend-Mentor-Profile]([https://www.frontendmentor.io/profile/your-username](https://www.frontendmentor.io/))
-* **GitHub:** [@Your-GitHub-Username](https://github.com/Jayasri002)
+* **Frontend Mentor:** [@Your-Frontend-Mentor-Profile](https://www.frontendmentor.io/)
+* **GitHub:** [Jayasri V](https://github.com/Jayasri002)
