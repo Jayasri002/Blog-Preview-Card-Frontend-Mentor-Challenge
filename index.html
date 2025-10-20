@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Blog preview card</title>
+    <style>
+      /* Import Fonts (Assuming Figtree is the font used in the design) */
+      @import url("https://fonts.googleapis.com/css2?family=Figtree:wght@600;800&display=swap");
+
+      :root {
+        /* Colors from the design */
+        --color-primary-yellow: hsl(47, 88%, 63%);
+        --color-neutral-white: hsl(0, 0%, 100%);
+        --color-neutral-grey: hsl(0, 0%, 50%);
+        --color-neutral-black: hsl(0, 0%, 7%);
+
+        /* Typography */
+        --font-weight-regular: 600;
+        --font-weight-bold: 800;
+      }
+
+      /* Body */
+      body {
+        background-color: var(--color-primary-yellow);
+        font-family: "Figtree", sans-serif;
+        font-size: 16px;
+        margin: 0;
+        min-height: 100vh;
+        /* Centering the card using Flexbox */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+      }
+      /* ========= Prfile Card========== */
+      .profile-card {
+        /* Layout and Sizing */
+        max-width: 320px;
+        width: 100%;
+        /* Box Model */
+        margin: 0;
+        padding: 24px;
+        background-color: var(--color-neutral-white);
+        border-radius: 20px;
+        /* shadow effect */
+        border: 1px solid var(--color-neutral-black);
+        box-shadow: 8px 8px 0 var(--color-neutral-black);
+        transition: box-shadow0.2s, transform 0.2s;
+      }
+
+      .profile-card:hover {
+        box-shadow: 16px 16px 0 var(--color-neutral-black); /* Larger offset */
+        transform: translate(-4px, -4px); /* Slight lift */
+      }
+
+      .Illustration-image img {
+        width: 100%;
+        border-radius: 10px;
+        margin-bottom: 20px;
+        display: block;
+      }
+
+      .profile-card h4 {
+        display: inline-block; /* Essential for background sizing */
+        background-color: var(--color-primary-yellow);
+        color: var(--color-neutral-black);
+        font-size: 14px;
+        font-weight: var(--font-weight-bold);
+        padding: 4px 12px;
+        border-radius: 4px;
+        margin-top: 0;
+        margin-bottom: 12px;
+      }
+
+      .profile-card > p:nth-of-type(1) {
+        /*  "Published 21 Dec 2023" */
+        font-size: 14px;
+        color: var(--color-neutral-black);
+        font-weight: var(--font-weight-regular);
+        margin-top: 0;
+        margin-bottom: 12px;
+      }
+
+      .profile-card h2 {
+        color: var(--color-neutral-black);
+        font-weight: var(--font-weight-bold);
+        font-size: 24px;
+        line-height: 1.2;
+        margin-top: 0;
+        margin-bottom: 16px;
+        cursor: pointer; /* Suggests the title is clickable */
+      }
+
+      .profile-card h2:hover {
+        color: var(--color-primary-yellow); /* Hover effect on title */
+      }
+      /* Description Text */
+      .profile-card > p:nth-of-type(2) {
+        /* Targets the description text */
+        color: var(--color-neutral-grey);
+        font-weight: var(--font-weight-regular);
+        margin-top: 0;
+        margin-bottom: 24px;
+        line-height: 1.5;
+      }
+
+      .author {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+      }
+
+      .author img {
+        width: 32px;
+        height: 32px;
+        border-radius: 50%;
+      }
+      .author span {
+        color: var(--color-neutral-black);
+        font-weight: var(--font-weight-bold);
+        font-size: 14px;
+      }
+
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+        margin-top: 20px;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="profile-card">
+      <div class="Illustration-image">
+        <img
+          src="assets/images/illustration-article.svg"
+          alt="Illustration image "
+        />
+      </div>
+      <h4>Learning</h4>
+      <p>Published 21 Dec 2023</p>
+      <h2><strong>HTML & CSS foundations</strong></h2>
+      <p>
+        These languages are the backbone of every website, defining structure,
+        content, and presentation.
+      </p>
+      <div class="author">
+        <img src="assets/images/image-avatar.webp" alt="Image of avatar" />
+
+        <span>Greg Hooper</span>
+      </div>
+    </div>
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by
+      <a href="https://github.com/Jayasri002" target="_blank">Jayasri V</a>.
+    </div>
+  </body>
+</html>
